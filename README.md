@@ -10,7 +10,7 @@ We go step-by-step through generating data, transforming it, mining frequent ite
 
 ##  Instructions Followed
 
-###  1. Simulate Transaction Data (3 Marks)
+###  1. Simulate Transaction Data 
 
 > **Instruction**: Create at least 10 fake transactions in Python.  
 > Each transaction should have 2–5 items selected from a pool of at least 8 unique items.
@@ -35,7 +35,7 @@ Transaction 3: ['Jacket', 'Scarf', 'Sneakers', 'Cap']
 
 
 
-###  2. Analyze with Apriori (4 Marks)
+###  2. Analyze with Apriori 
 
 > **Instruction**:  
 > Convert the data into a one-hot encoded format using pandas.  
@@ -72,7 +72,7 @@ support itemsets
 
 
 
-### 3. Generate Rules (3 Marks)
+### 3. Generate Rules 
 
 > **Instruction**:  
 > Generate association rules with:
