@@ -1,11 +1,12 @@
 # Vivian386-association-mini-
+
 # Project Title : Association Rule Mining on Simulated Clothing Transactions
 
 This mini-project demonstrates how to apply **Association Rule Mining** using the **Apriori algorithm** on simulated clothing transaction data.
 
 We go step-by-step through generating data, transforming it, mining frequent itemsets, and finally generating and interpreting association rules.
 
----
+
 
 ##  Instructions Followed
 
@@ -32,7 +33,7 @@ Transaction 2: ['Sneakers', 'Sweater', 'T-Shirt']
 Transaction 3: ['Jacket', 'Scarf', 'Sneakers', 'Cap']
 
 
----
+
 
 ###  2. Analyze with Apriori (4 Marks)
 
@@ -43,7 +44,7 @@ Transaction 3: ['Jacket', 'Scarf', 'Sneakers', 'Cap']
 
 **Step-by-Step:**
 
-#### 🔹 One-Hot Encoding:
+####  One-Hot Encoding:
 
 - We use `TransactionEncoder` to convert transaction lists into a binary matrix.
 - Each row represents a transaction.
@@ -56,7 +57,7 @@ Transaction 3: ['Jacket', 'Scarf', 'Sneakers', 'Cap']
 | True   | True  | False    | ... |
 | False  | False | True     | ... |
 
-#### 🔹 Apriori Algorithm:
+####  Apriori Algorithm:
 
 - We apply the Apriori algorithm from `mlxtend.frequent_patterns`.
 - Minimum support is set to `0.3`, meaning we keep only itemsets that appear in at least 3 out of 10 transactions.
@@ -69,7 +70,7 @@ support itemsets
 2 0.3 (Sneakers, Cap)
 
 
----
+
 
 ### 3. Generate Rules (3 Marks)
 
@@ -95,7 +96,6 @@ Confidence is the probability that if someone buys item A, they will also buy it
 (Jeans, T-Shirt) (Sneakers) 0.3 0.75 1.3
 
 
----
 
 ### Explanation of a Sample Rule
 
@@ -111,7 +111,7 @@ Confidence is the probability that if someone buys item A, they will also buy it
 > - Place these items closer together in a physical store
 > - Create combo discounts to increase basket size
 
----
+
 
 ##  How to Run the Project
 
@@ -119,11 +119,11 @@ Confidence is the probability that if someone buys item A, they will also buy it
 
 Install the required Python libraries:
 
-```bash
+bash
 pip install pandas mlxtend
 
 
-Conclusion
+## Conclusion
 This project successfully demonstrates how association rule mining can uncover meaningful patterns in consumer behavior — even with a small, simulated dataset.
 
 Using the Apriori algorithm, we:
